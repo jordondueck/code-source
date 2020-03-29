@@ -1,6 +1,13 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1f 6f;
 }
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1f 6f;
+} */
 
 .navbar {
   display: flex;
@@ -15,4 +22,9 @@
 
 .list-item {
   padding: 0.5rem;
+}
+
+.navbar__link {
+  color: black;
+  text-decoration: none;
 }

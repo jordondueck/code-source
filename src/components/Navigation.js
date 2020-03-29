@@ -22,18 +22,18 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="list">
         <li className="list-item">
-          <Link to="/">Code Source</Link>
+          <Link className="navbar__link" to="/">Code Source</Link>
         </li>
       </ul>
       <ul className="list">
         <li className="list-item">
-          <Link to="/">Home</Link>
+          <Link className="navbar__link" to="/">Home</Link>
         </li>
         <li className="list-item">
-          <Link to="/about">About</Link>
+          <Link className="navbar__link" to="/about">About</Link>
         </li>
         <li className="list-item">
-          <Link to="/users">Users</Link>
+          <Link className="navbar__link" to="/users">Users</Link>
         </li>
       </ul>
     </nav>

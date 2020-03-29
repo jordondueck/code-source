@@ -8,22 +8,20 @@ const App = () => {
   return (
     <section className="App">
       <Router>
-        <section>
-          <Navbar />
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/users">
-              <Users />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </section>
+        {/* <section className="container"> */}
+        <Navbar />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        {/* </section> */}
       </Router>
     </section>
   );
