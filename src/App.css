@@ -1,19 +1,14 @@
 .App {
   height: 100vh;
   display: grid;
-  grid-template-rows: 3rem auto 2rem;
-  grid-template-columns: auto;
+  grid-template-rows: 3rem auto;
+  /* grid-template-columns: auto; */
   grid-template-areas: 
   "header"
   "main"
-  "footer";
+  ;
   text-align: center;
 }
-
-/* .container {
-  display: grid;
-  grid-template-columns: 1f 6f;
-} */
 
 .navbar {
   grid-area: header;
@@ -21,7 +16,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-
 }
 
 .list {
@@ -45,8 +39,43 @@
   font-weight: bold;
 }
 
-.content {
+.container {
   grid-area: main;
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+.dashboard__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard__middle {
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-rows: 1fr; */
+  grid-gap: 1rem;
+  /* padding: 2rem; */
+  justify-items: center;
+  /* max-width: 80%; */
+  /* margin: 0; */
+}
+
+.dashboard__bottom {
+  align-self: end;
+}
+
+.card {
+  
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.75rem;
+}
+
+.link {
+  padding: 0.5rem 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

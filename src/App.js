@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navigation";
-import Home from "./components/Home";
+import Dashboard from "./components/Dashboard";
+import Projects from "./components/Projects";
 import "./App.css";
 
 const App = () => {
   return (
     <section className="App">
       <Router>
-        {/* <section className="container"> */}
         <Navbar />
         <Switch>
           <Route path="/about">
@@ -18,11 +18,9 @@ const App = () => {
             <Users />
           </Route>
           <Route path="/">
-            <Home />
+            <Dashboard />
           </Route>
         </Switch>
-        <Footer />
-        {/* </section> */}
       </Router>
     </section>
   );
@@ -34,10 +32,6 @@ function About() {
 
 function Users() {
   return <h2>Users</h2>;
-}
-
-const Footer = () => {
-  return <p>Footer</p>;
 }
 
 export default App;
