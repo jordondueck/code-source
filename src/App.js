@@ -21,6 +21,7 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
+        <Footer />
         {/* </section> */}
       </Router>
     </section>
@@ -33,6 +34,10 @@ function About() {
 
 function Users() {
   return <h2>Users</h2>;
+}
+
+const Footer = () => {
+  return <p>Footer</p>;
 }
 
 export default App;
