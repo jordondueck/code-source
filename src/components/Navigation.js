@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import styled from "styled-components";
 
-// Style Components
+// Styled Components
 // const Nav = styled.nav`
 //   display: flex;
 //   justify-content: space-between;
@@ -28,13 +28,13 @@ const Navbar = () => {
       </ul>
       <ul className="list">
         <li className="list-item">
-          <Link className="navbar__link" to="/">Home</Link>
+          <Link className="navbar__link" to="/">Dashboard</Link>
         </li>
         <li className="list-item">
-          <Link className="navbar__link" to="/about">About</Link>
+          <Link className="navbar__link" to="/profile">Profile</Link>
         </li>
         <li className="list-item">
-          <Link className="navbar__link" to="/users">Users</Link>
+          <Link className="navbar__link" to="/settings">Settings</Link>
         </li>
       </ul>
     </nav>

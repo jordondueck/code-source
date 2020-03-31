@@ -11,11 +11,11 @@ const App = () => {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/profile">
+            <Profile />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/settings">
+            <Settings />
           </Route>
           <Route path="/">
             <Dashboard />
@@ -26,12 +26,12 @@ const App = () => {
   );
 };
 
-function About() {
-  return <h2>About</h2>;
+function Profile() {
+  return <h2>Profile</h2>;
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function Settings() {
+  return <h2>Settings</h2>;
 }
 
 export default App;
