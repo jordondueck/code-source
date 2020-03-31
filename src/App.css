@@ -54,9 +54,9 @@
 
 .dashboard__card-list {
   flex-grow: 2;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  justify-content: center;
   align-items: center;
   /* max-width: 80%; */
   /* margin: 0; */
@@ -71,6 +71,7 @@
   align-items: center;
   border: 1px solid black;
   border-radius: 0.5rem;
+  margin: 1rem;
   padding: 0.75rem;
   width: 12rem;
   height: 6rem;
@@ -87,4 +88,9 @@
 
 p {
   margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
