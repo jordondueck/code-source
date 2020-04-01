@@ -7,22 +7,26 @@ const Dashboard = () => {
     {
       id: "001",
       title: "Code Source",
-      commit: "03-11-20"
+      commit: "03-11-20",
+      url: "https://github.com/jordondueck/code-source"
     },
     {
       id: "002",
       title: "Detekt",
-      commit: "02-07-20"
+      commit: "02-07-20",
+      url: "https://github.com/jordondueck/detekt"
     },
     {
       id: "003",
       title: "Studio Ghibli Search",
-      commit: "12-23-19"
+      commit: "12-23-19",
+      url: "https://github.com/jordondueck/studio-ghibli-search"
     },
     {
       id: "004",
       title: "RoboFriends",
-      commit: "12-12-19"
+      commit: "12-12-19",
+      url: "https://github.com/jordondueck/robofriends"
     }
   ];
 
